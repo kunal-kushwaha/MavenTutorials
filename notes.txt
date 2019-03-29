@@ -1,0 +1,16 @@
+$ export M2_HOME=/Users/SicParvisMagna/apache-maven-3.6.0
+$ export PATH=/Users/SicParvisMagna/apache-maven-3.6.0/bin:${PATH}
+$ mvn --version
+$ mkdir myapp
+$ cd myapp
+$ mvn archetype:generate
+
+// To compile project : 
+// go in folder with pom.xml file : this has info about dependencies
+$ mvn compile
+
+// Package into jar file
+$ mvn package	// this also runs junit testcases
+
+// Execute
+$ java -cp target/MavenTestApp-1.0-SNAPSHOT.jar org.kunal.App
